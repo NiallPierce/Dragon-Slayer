@@ -3,14 +3,42 @@ backgroundMusic.loop = true;
 let isMuted = false;
 let hasPlayedOnce = false;
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Hides the game container and show the play button
-      const gameContainer = document.querySelector('.game-container');
-      gameContainer.style.display = 'none';
-  
-  
-      const playButton = document.createElement('button');
-      playButton.id = 'playButton';
-      playButton.innerHTML = 'PLAY GAME'; // Play Game symbol 
-      document.body.prepend(playButton);
+    const gameContainer = document.querySelector('.game-container');
+    gameContainer.style.display = 'none';
+
+
+    const playButton = document.createElement('button');
+    playButton.id = 'playButton';
+    playButton.innerHTML = 'PLAY GAME'; // Play Game symbol 
+    document.body.prepend(playButton);
+
+    // Play music on button click
+    playButton.addEventListener('click', function playOnUserInteraction() {
+        if (!hasPlayedOnce) {
+            backgroundMusic.play().then(() => {
+                hasPlayedOnce = true;
+                console.log('Music started playing');
+                playButton.style.display = 'none'; // Hide the button after successful play
+                gameContainer.style.display = 'block'; // Show the game container
+
+                setTimeout(() => gameContainer.classList.add('show'), 10);
+
+            }).catch(error => {
+                console.log('Play failed:', error);
+            });
+        }
+    });
+        // Set up mute button
+        const muteButton = document.getElementById('muteButton');
+        if (muteButton) {
+            muteButton.addEventListener('click', toggleMute);
+        } else {
+            console.error('Mute button not found in the DOM');
+        }
+    
+        // Set up game buttons
+        document.getElementById('attackButton').addEventListener('click', playerAttack);
+        document.getElementById('resetButton').addEventListener('click', resetGame);
 });
