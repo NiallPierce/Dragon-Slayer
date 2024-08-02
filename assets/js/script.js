@@ -1,2 +1,4 @@
-document.getElementById('attackButton').addEventListener('click', playerAttack);
-document.getElementById('resetButton').addEventListener('click', resetGame);
+let backgroundMusic = new Audio('assets/audio/background-music.mp3');
+backgroundMusic.loop = true;
+let isMuted = false;
+let hasPlayedOnce = false;
