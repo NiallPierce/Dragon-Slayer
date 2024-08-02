@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Slayer</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
 </head>
 <body>
+    <h1>Slay the Dragon</h1>
     <div class="game-container">
-        <h1>Slay the Dragon</h1>
-        <div class="stats">
-            <p id="userHealth">Your Health: 100</p>
-            <p id="dragonHealth">Dragon's Health: 100</p>
+        <div class="health-container">
+            <div class="health" id="userHealth">Your Health: 100</div>
+            <div class="health" id="dragonHealth">Dragon's Health: 100</div>
         </div>
+        <div class="button-container">
+            <button id="attackButton">Attack!</button>
+            <button id="muteButton">Mute</button>
+            <button id="resetButton" style="display: none;">Reset</button>
+        </div>
+        <div id="gameMessage">Click the button to attack the dragon!</div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
