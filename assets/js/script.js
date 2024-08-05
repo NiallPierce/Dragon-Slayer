@@ -6,7 +6,15 @@ let hasPlayedOnce = false;
 document.addEventListener('DOMContentLoaded', function () {
     // Hides the game container and show the play button
     const gameContainer = document.querySelector('.game-container');
+    const messageContainer = document.querySelector('.message-container');
+    const playerMessage = document.getElementById('gameMessagePlayer');
+    const dragonMessage = document.getElementById('gameMessageDragon');
+
+    //Hides game elements until play is pressed
     gameContainer.style.display = 'none';
+    messageContainer.style.display = 'none';
+    playerMessage.style.display = 'none';
+    dragonMessage.style.display = 'none';
 
 
     const playButton = document.createElement('button');
