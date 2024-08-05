@@ -62,6 +62,7 @@ function toggleMute() {
     isMuted = !isMuted;
 }
 
+// User and Dragons Health
 let playerHealth = 100;
 let dragonHealth = 100;
 let isGameOver = false;
@@ -91,4 +92,42 @@ function playerAttack() {
     if (checkWin()) return;
 
     setTimeout(dragonAttack, 1000);
+}
+
+function dragonAttack() {
+    let dragonDamage = rollDice(10);
+    playerHealth -= dragonDamage;
+    updateHealth();
+    
+    const dragonMessage = document.getElementById('gameMessageDragon');
+    resetAnimation(dragonMessage);
+    dragonMessage.style.display = 'block';
+    dragonMessage.textContent = `The dragon attacked and did ${dragonDamage} damage!`;
+    
+    checkWin();
+}
+
+function updateHealth() {
+    document.getElementById('userHealth').textContent = `Your Health: ${playerHealth}`;
+    document.getElementById('dragonHealth').textContent = `Dragon's Health: ${dragonHealth}`;
+}
+
+function checkWin() {
+    const playerMessage = document.getElementById('gameMessagePlayer');
+    const dragonMessage = document.getElementById('gameMessageDragon');
+    
+    if (dragonHealth <= 0) {
+        playerMessage.textContent = "You defeated the dragon! Victory!";
+        dragonMessage.style.display = 'none';
+        document.getElementById('attackButton').disabled = true;
+        document.getElementById('resetButton').style.display = 'inline-block';
+        return true;
+    } else if (playerHealth <= 0) {
+        playerMessage.style.display = 'none';
+        dragonMessage.textContent = "The dragon defeated you. Game Over.";
+        document.getElementById('attackButton').disabled = true;
+        document.getElementById('resetButton').style.display = 'inline-block';
+        return true;
+    }
+    return false;
 }
