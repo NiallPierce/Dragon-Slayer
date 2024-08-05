@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Play Game symbol 
     const playButton = document.createElement('button');
     playButton.id = 'playButton';
-    playButton.innerHTML = 'PLAY GAME'; 
+    playButton.innerHTML = 'PLAY GAME';
     document.body.prepend(playButton);
 
     // Play music on button click
@@ -28,11 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
             backgroundMusic.play().then(() => {
                 hasPlayedOnce = true;
                 console.log('Music started playing');
-                playButton.style.display = 'none'; // Hide the button after successful play
-                gameContainer.style.display = 'block'; // Show the game container
-
+                playButton.style.display = 'none';
+                gameContainer.style.display = 'block';
+                messageContainer.style.display = 'block';
                 setTimeout(() => gameContainer.classList.add('show'), 10);
-
             }).catch(error => {
                 console.log('Play failed:', error);
             });
@@ -51,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('resetButton').addEventListener('click', resetGame);
 });
 
+// Mute botton on and off
 function toggleMute() {
     if (isMuted) {
         backgroundMusic.play().catch(error => console.log('Play failed:', error));
@@ -74,7 +74,7 @@ function rollDice(sides) {
 //Animation reset after each click of attack
 function resetAnimation(element) {
     element.style.animation = 'none';
-    element.offsetHeight; 
+    element.offsetHeight;
     element.style.animation = null;
 }
 
@@ -82,13 +82,13 @@ function playerAttack() {
     let playerDamage = rollDice(10);
     dragonHealth -= playerDamage;
     updateHealth();
-    
+
     const playerMessage = document.getElementById('gameMessagePlayer');
     resetAnimation(playerMessage);
     playerMessage.style.display = 'block';
     gameMessage.style.display = 'none';
     playerMessage.textContent = `You attacked the dragon and did ${playerDamage} damage!`;
-    
+
     if (checkWin()) return;
 
     setTimeout(dragonAttack, 1000);
@@ -98,12 +98,12 @@ function dragonAttack() {
     let dragonDamage = rollDice(10);
     playerHealth -= dragonDamage;
     updateHealth();
-    
+
     const dragonMessage = document.getElementById('gameMessageDragon');
     resetAnimation(dragonMessage);
     dragonMessage.style.display = 'block';
     dragonMessage.textContent = `The dragon attacked and did ${dragonDamage} damage!`;
-    
+
     checkWin();
 }
 
@@ -115,7 +115,7 @@ function updateHealth() {
 function checkWin() {
     const playerMessage = document.getElementById('gameMessagePlayer');
     const dragonMessage = document.getElementById('gameMessageDragon');
-    
+
     if (dragonHealth <= 0) {
         playerMessage.textContent = "You defeated the dragon! Victory!";
         dragonMessage.style.display = 'none';

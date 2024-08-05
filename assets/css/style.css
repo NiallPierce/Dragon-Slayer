@@ -167,6 +167,7 @@ button:hover {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
+/*Change cursor to Sword*/
 * {
     cursor: url(https://cur.cursors-4u.net/sports/spo-1/spo15.cur), auto !important;
 }
