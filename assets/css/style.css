@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'BlackChancery';
-    src: url('/assets/font/BLKCHCRY.TTF') format('truetype');
+    src: url('../assets/font/BLKCHCRY.TTF') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url('/public/images/dragonBG.webp');
+    background-image: url('../assets/images/dragonBG.webp');
     background-size: cover;
     background-position: center;
     color: #d4af37;
