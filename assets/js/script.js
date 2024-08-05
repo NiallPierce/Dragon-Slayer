@@ -131,3 +131,14 @@ function checkWin() {
     }
     return false;
 }
+
+function resetGame() {
+    playerHealth = 100;
+    dragonHealth = 100;
+    document.getElementById('userHealth').textContent = `Your Health: ${playerHealth}`;
+    document.getElementById('dragonHealth').textContent = `Dragon's Health: ${dragonHealth}`;
+    document.getElementById('gameMessagePlayer').style.display = 'none';
+    document.getElementById('gameMessageDragon').style.display = 'none';
+    document.getElementById('attackButton').disabled = false;
+    document.getElementById('resetButton').style.display = 'none';
+}

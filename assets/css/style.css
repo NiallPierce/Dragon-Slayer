@@ -16,11 +16,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url('/assets/images/dragonBG.webp');
+    background-image: url('/public/images/dragonBG.webp');
     background-size: cover;
     background-position: center;
     color: #d4af37;
-    cursor: url(https://cur.cursors-4u.net/sports/spo-1/spo15.cur), auto !important;
 }
 
 h1 {
