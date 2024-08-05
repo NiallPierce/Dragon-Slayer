@@ -1,11 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
 @font-face {
     font-family: 'BlackChancery';
-    src: url('../assets/font/BLKCHCRY.TTF') format('truetype');
+    src: url('../font/BLKCHCRY.TTF') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
 
 body {
     font-family: 'BlackChancery', serif;
@@ -16,7 +62,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url('../assets/images/dragonBG.webp');
+    background-image: url('../images/dragonBG.webp');
     background-size: cover;
     background-position: center;
     color: #d4af37;
