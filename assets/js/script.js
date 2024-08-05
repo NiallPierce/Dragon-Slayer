@@ -50,3 +50,14 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('attackButton').addEventListener('click', playerAttack);
     document.getElementById('resetButton').addEventListener('click', resetGame);
 });
+
+function toggleMute() {
+    if (isMuted) {
+        backgroundMusic.play().catch(error => console.log('Play failed:', error));
+        document.getElementById('muteButton').textContent = 'Mute';
+    } else {
+        backgroundMusic.pause();
+        document.getElementById('muteButton').textContent = 'Unmute';
+    }
+    isMuted = !isMuted;
+}
