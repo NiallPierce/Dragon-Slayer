@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
     playerMessage.style.display = 'none';
     dragonMessage.style.display = 'none';
 
-
+    // Play Game symbol 
     const playButton = document.createElement('button');
     playButton.id = 'playButton';
-    playButton.innerHTML = 'PLAY GAME'; // Play Game symbol 
+    playButton.innerHTML = 'PLAY GAME'; 
     document.body.prepend(playButton);
 
     // Play music on button click
@@ -38,15 +38,15 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
-        // Set up mute button
-        const muteButton = document.getElementById('muteButton');
-        if (muteButton) {
-            muteButton.addEventListener('click', toggleMute);
-        } else {
-            console.error('Mute button not found in the DOM');
-        }
-    
-        // Set up game buttons
-        document.getElementById('attackButton').addEventListener('click', playerAttack);
-        document.getElementById('resetButton').addEventListener('click', resetGame);
+    // Set up mute button
+    const muteButton = document.getElementById('muteButton');
+    if (muteButton) {
+        muteButton.addEventListener('click', toggleMute);
+    } else {
+        console.error('Mute button not found in the DOM');
+    }
+
+    // Set up game buttons
+    document.getElementById('attackButton').addEventListener('click', playerAttack);
+    document.getElementById('resetButton').addEventListener('click', resetGame);
 });

@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: 'BlackChancery';
+    src: url('/assets/font/BLKCHCRY.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+body {
+    font-family: 'BlackChancery', serif;
+    background-color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url('/assets/images/dragonBG.webp');
+    background-size: cover;
+    background-position: center;
+    color: #d4af37;
+    cursor: url(https://cur.cursors-4u.net/sports/spo-1/spo15.cur), auto !important;
+}
