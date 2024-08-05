@@ -216,3 +216,58 @@ button:hover {
 * {
     cursor: url(https://cur.cursors-4u.net/sports/spo-1/spo15.cur), auto !important;
 }
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+        top: 15vh;
+    }
+
+    .health {
+        font-size: 2em;
+    }
+
+    #gameMessage, #gameMessageDragon, #gameMessagePlayer {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+        width: 150px;
+    }
+
+    #playButton {
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+        top: 10vh;
+    }
+
+    .health {
+        font-size: 1.5em;
+    }
+
+    #gameMessage, #gameMessageDragon, #gameMessagePlayer {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.8em;
+        width: 120px;
+    }
+
+    #playButton {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+    }
+}
