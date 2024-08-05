@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragon Slayer</title>
+    <title>Dragon Fighter</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    
     <h1>Slay the Dragon</h1>
+
+    <div class="message-container">
+    <div id="gameMessage">Click the button to attack the dragon!</div>
+    <div id="gameMessageDragon"></div>
+    <div id="gameMessagePlayer"></div>
+    </div>
+
+
+
     <div class="game-container">
         <div class="health-container">
             <div class="health" id="userHealth">Your Health: 100</div>
@@ -18,7 +28,7 @@
             <button id="muteButton">Mute</button>
             <button id="resetButton" style="display: none;">Reset</button>
         </div>
-        <div id="gameMessage">Click the button to attack the dragon!</div>
+
     </div>
     <script src="assets/js/script.js"></script>
 </body>
