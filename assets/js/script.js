@@ -61,3 +61,34 @@ function toggleMute() {
     }
     isMuted = !isMuted;
 }
+
+let playerHealth = 100;
+let dragonHealth = 100;
+let isGameOver = false;
+
+function rollDice(sides) {
+    return Math.floor(Math.random() * sides) + 1;
+}
+
+//Animation reset after each click of attack
+function resetAnimation(element) {
+    element.style.animation = 'none';
+    element.offsetHeight; 
+    element.style.animation = null;
+}
+
+function playerAttack() {
+    let playerDamage = rollDice(10);
+    dragonHealth -= playerDamage;
+    updateHealth();
+    
+    const playerMessage = document.getElementById('gameMessagePlayer');
+    resetAnimation(playerMessage);
+    playerMessage.style.display = 'block';
+    gameMessage.style.display = 'none';
+    playerMessage.textContent = `You attacked the dragon and did ${playerDamage} damage!`;
+    
+    if (checkWin()) return;
+
+    setTimeout(dragonAttack, 1000);
+}
