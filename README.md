@@ -54,6 +54,22 @@ Dragon Fighter is a turn-based battle game between a player and a dragon. The pl
 
     ![Game Message2](screenshots/gamemessage2.png)
 
+- __End of Game__
+
+  - If the user managed to win by getting the dragons health to zero before their health reaches zero they will be met with a victory message.
+
+    ![Victory](screenshots/victory.png)
+
+  - If the dragon beats the user they will be met with a defeat message.
+
+    ![Defeat](screenshots/defeat.png)
+
+- __Reset__
+
+  - Once the game has finished, a reset button will appear at the bottom of the screen. If they wish to play again they can press this to reset back to default main menu to start again.
+
+    ![Reset](screenshots/reset.png)
+
 
 
 ### Features Left to Implement
