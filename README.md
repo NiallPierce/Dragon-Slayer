@@ -138,12 +138,14 @@ The live link can be found here - https://niallpierce.github.io/Dragon-Slayer/
 
 ## Credits 
 
-
-### Content 
-
-
-
 ### Media
+ 
+- **Font**: Font is called Black Chancery from [1001fonts](https://www.1001fonts.com/blackchancery-font.html)
+- **Audio**: Audio is Battle of the Dragons from [Pixabay](https://pixabay.com/music/main-title-battle-of-the-dragons-8037/)
+- **Background Image**: The image of the dragon was made using a discord image generator called [Midjourney](https://discord.com/invite/midjourney)
+- **Sword Cursor**: The image for the sword cursor is from [cursors-4u](https://www.cursors-4u.com/cursor/2005/05/08/spo15-11.html)
+
+### Support
 
 
 
