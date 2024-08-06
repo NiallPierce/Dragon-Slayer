@@ -7,6 +7,8 @@
 - [Features](#features)
 - [Existing Features](#existing-features)
 - [Features Left to Implement](#features-left-to-implement)
+- [Design](#design)
+- [Bugs](#bugs)
 - [Testing](#testing)
 - [Validator Testing](#validator-testing)
 - [Deployment](#deployment)
@@ -94,6 +96,11 @@ The user experience is designed to be smooth and engaging, with clear feedback m
 - **Font Choice**: 'BlackChancery' and 'Pirata One' were chosen to match the fantasy setting.
 - **Color Scheme**: A dark background with golden text to provide a high contrast and fantasy-like feel.
 - **Animations**: Subtle animations, like the shake effect on attack messages, enhance the feedback.
+
+## Bugs
+- **Audio**: Audio wouldnt autoplay, used play on click to get around this.
+- **Media Files**: Pathing issue to live site for background image, font and favicon.
+- **Smaller Screens**: Game Message would over lap with button on smaller screen, added media query.
 
 
 ## Testing 

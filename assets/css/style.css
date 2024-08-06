@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
-
+/* Font for Fantasy style */
 @font-face {
     font-family: 'BlackChancery';
     src: url('../font/BLKCHCRY.TTF') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
-
+/* Shakes Game Message */
 @keyframes shake {
     0% {
         transform: translate(1px, 1px) rotate(0deg);
@@ -152,16 +152,16 @@ h1 {
     display: inline-block;
 
 }
-
+/* Gold color for player */
 #gameMessagePlayer {
     color: #ffd700;
-    /* Gold color for player */
+    
 
 }
-
+/* Orange-red color for dragon */
 #gameMessageDragon {
     color: #ff4500;
-    /* Orange-red color for dragon */
+    
 
 }
 
@@ -206,7 +206,7 @@ button:hover {
     justify-content: center;
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.7);
 }
-
+/* Changes to play button on hover */
 #playButton:hover {
     background-color: rgba(165, 42, 42, 0.9);
     transform: translate(-50%, -50%) scale(1.1);
