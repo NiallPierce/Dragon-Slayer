@@ -25,6 +25,11 @@ Dragon Fighter is a turn-based battle game between a player and a dragon. The pl
   - Placed in the center of the opening page this feature will start the game, taking the user to the main game page and also starting the inititate the audio for the website.
 ![Play](screenshots/playgamebutton.png)
 
+- __Game Message__
+
+  - On the main page the user is met with a text explaining how to start the game.
+![Game Message1](screenshots/gamemessage1.png)
+
 
 ### Features Left to Implement
 
