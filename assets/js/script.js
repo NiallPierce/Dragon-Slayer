@@ -62,7 +62,7 @@ function toggleMute() {
     isMuted = !isMuted;
 }
 
-// User and Dragons Health
+// User and Dragons starting health values
 let playerHealth = 100;
 let dragonHealth = 100;
 let isGameOver = false;
@@ -113,7 +113,7 @@ function updateHealth() {
     document.getElementById('userHealth').textContent = `Your Health: ${playerHealth}`;
     document.getElementById('dragonHealth').textContent = `Dragon's Health: ${dragonHealth}`;
 }
-// Triggers for end of game and sets Win or Lose message
+// Triggers for end of game and sets Win or Lose state and message
 function checkWin() {
     const playerMessage = document.getElementById('gameMessagePlayer');
     const dragonMessage = document.getElementById('gameMessageDragon');
