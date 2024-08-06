@@ -48,6 +48,12 @@ Dragon Fighter is a turn-based battle game between a player and a dragon. The pl
     ![Dragon Health](screenshots/dragonhealth.png)
 
 
+- __Game Message After Attack__
+
+  - Once the user clicks the "Attack!" button. The game message shakes in the center of the page showing how much damage they did to the dragon. Within a short delay a follow up message shows above, stating how much damage the dragon did back"
+
+    ![Game Message2](screenshots/gamemessage2.png)
+
 
 
 ### Features Left to Implement
