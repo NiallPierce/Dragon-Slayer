@@ -1,4 +1,4 @@
-# Dragon Fighter
+# Dragon Slayer
 
 ## Table of Contents
 - [Overview](#overview)
@@ -20,7 +20,10 @@ Dragon Fighter is a turn-based battle game between a player and a dragon. The pl
 
 
 ### Existing Features
+- __Play Button__
 
+  - Placed in the center of the opening page this feature will start the game, taking the user to the main game page and also starting the inititate the audio for the website.
+![Play](screenshots/playgamebutton.png)
 
 
 ### Features Left to Implement
