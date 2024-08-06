@@ -14,7 +14,7 @@
 
 
 ## Overview
-Dragon Fighter is a turn-based battle game between a player and a dragon. The player uses a dice to determine the damage dealt to the dragon, and the dragon retaliates in turn. The game ends when either the player or the dragon's health drops to zero.
+Dragon Slayer is a turn-based battle game between a player and a dragon. The player uses a dice to determine the damage dealt to the dragon, and the dragon retaliates in turn. The game ends when either the player or the dragon's health drops to zero.
 
 
 ## Features 
@@ -91,7 +91,7 @@ The user experience is designed to be smooth and engaging, with clear feedback m
 
 ### Design Decisions
 
-- **Font Choice**: 'BlackChancery' and 'Pirata One' were chosen for their match the fantasy setting.
+- **Font Choice**: 'BlackChancery' and 'Pirata One' were chosen to match the fantasy setting.
 - **Color Scheme**: A dark background with golden text to provide a high contrast and fantasy-like feel.
 - **Animations**: Subtle animations, like the shake effect on attack messages, enhance the feedback.
 
@@ -144,8 +144,12 @@ The live link can be found here - https://niallpierce.github.io/Dragon-Slayer/
 - **Audio**: Audio is Battle of the Dragons from [Pixabay](https://pixabay.com/music/main-title-battle-of-the-dragons-8037/)
 - **Background Image**: The image of the dragon was made using a discord image generator called [Midjourney](https://discord.com/invite/midjourney)
 - **Sword Cursor**: The image for the sword cursor is from [cursors-4u](https://www.cursors-4u.com/cursor/2005/05/08/spo15-11.html)
+- **Web Icon**: For the double swords in the browser i used [Favicon](https://favicon.io/)
 
-### Support
+### Support & Resources
+
+- **W3schools**: Used to help with general syntax and parenting. Helped with Keyframe shake also.[KeyFrameShake](https://www.w3schools.com/howto/howto_css_shake_image.asp)
+- **Stackoverflow**: Used to query play button and audio play on click.
 
 
 
