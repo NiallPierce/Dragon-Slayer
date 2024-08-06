@@ -74,15 +74,36 @@ Dragon Fighter is a turn-based battle game between a player and a dragon. The pl
 
 ### Features Left to Implement
 
+- I would like to add an audio file of a sword swing sound when the user hits attack.
+- Additional animation to the victory and defeat message.
 
 
 ## Testing 
 
+| Test Case | Description | Steps | Expected Result | Actual Result | Status |
+|-----------|-------------|-------|-----------------|---------------|--------|
+| 1 | Initial game state | 1. Load the game <br> 2. Check health values | Player and Dragon both have 100 health | Player and Dragon both have 100 health | Pass |
+| 2 | Player attack | 1. Click "Attack" button <br> 2. Observe player damage to dragon | Dragon health decreases by 1-10 | Dragon health decreases by correct amount | Pass |
+| 3 | Dragon retaliates | 1. Click "Attack" button <br> 2. Observe dragon damage to player | Player health decreases by 1-10 | Player health decreases by correct amount | Pass |
+| 4 | Game reset | 1. Play the game until one health drops to 0 <br> 2. Click "Reset" button | Both Player and Dragon health reset to 100 | Both Player and Dragon health reset to 100 | Pass |
+| 5 | Mute background music | 1. Click "Mute" button <br> 2. Observe background music | Background music stops | Background music stops | Pass |
+| 6 | Unmute background music | 1. Click "Mute" button again <br> 2. Observe background music | Background music resumes | Background music resumes | Pass |
+| 7 | Responsive design | 1. Resize the browser window <br> 2. Observe layout | Layout adjusts to fit screen size | Layout adjusts correctly | Pass |
 
 
 
 ### Validator Testing 
-
+- HTML
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
+- JavaScript
+    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+      - The following metrics were returned: 
+      - There are 14 functions in this file.
+      - Function with the largest signature takes 1 arguments, while the median is 0.
+      - Largest function has 19 statements in it, while the median is 4.5.
+      - The most complex function has a cyclomatic complexity value of 3 while the median is 1.
 
 
 ### Unfixed Bugs
