@@ -28,7 +28,26 @@ Dragon Fighter is a turn-based battle game between a player and a dragon. The pl
 - __Game Message__
 
   - On the main page the user is met with a text explaining how to start the game.
-![Game Message1](screenshots/gamemessage1.png)
+  
+    ![Game Message1](screenshots/gamemessage1.png)
+
+- __Buttons__
+
+  - Both buttons are placed center/bottom of the screen for the user to interact with. The attack button initiates the dice roll and the mute button toggles the audio on and off.
+
+    ![Buttons](screenshots/buttons.png)
+
+- __Health__
+
+  - Text showing the current users health which updates as the game progresses.
+
+    ![User Health](screenshots/userhealth.png)
+
+  - Text showing the current the dragons health which updates as the game progresses.
+
+    ![Dragon Health](screenshots/dragonhealth.png)
+
+
 
 
 ### Features Left to Implement
