@@ -78,11 +78,12 @@ function resetAnimation(element) {
     element.style.animation = null;
 }
 
+// Dice roll to damage Dragon 
 function playerAttack() {
     let playerDamage = rollDice(10);
     dragonHealth -= playerDamage;
     updateHealth();
-
+    // Sets game message for player
     const playerMessage = document.getElementById('gameMessagePlayer');
     resetAnimation(playerMessage);
     playerMessage.style.display = 'block';
@@ -91,14 +92,15 @@ function playerAttack() {
 
     if (checkWin()) return;
 
+    // Delay on Dragons Return Attack
     setTimeout(dragonAttack, 1000);
 }
-
+// Dice roll for Dragon to damage user
 function dragonAttack() {
     let dragonDamage = rollDice(10);
     playerHealth -= dragonDamage;
     updateHealth();
-
+    //Sets game message for dragon
     const dragonMessage = document.getElementById('gameMessageDragon');
     resetAnimation(dragonMessage);
     dragonMessage.style.display = 'block';
@@ -106,12 +108,12 @@ function dragonAttack() {
 
     checkWin();
 }
-
+// Updates Player and Dragons health
 function updateHealth() {
     document.getElementById('userHealth').textContent = `Your Health: ${playerHealth}`;
     document.getElementById('dragonHealth').textContent = `Dragon's Health: ${dragonHealth}`;
 }
-
+// Triggers for end of game and sets Win or Lose message
 function checkWin() {
     const playerMessage = document.getElementById('gameMessagePlayer');
     const dragonMessage = document.getElementById('gameMessageDragon');
@@ -131,7 +133,7 @@ function checkWin() {
     }
     return false;
 }
-
+// Resets the game back to the starting state
 function resetGame() {
     playerHealth = 100;
     dragonHealth = 100;
