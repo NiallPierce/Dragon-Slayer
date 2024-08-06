@@ -1,5 +1,7 @@
 # Dragon Slayer
 
+![Responsive](screenshots/responsive.png)
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -104,13 +106,18 @@ Dragon Fighter is a turn-based battle game between a player and a dragon. The pl
       - Function with the largest signature takes 1 arguments, while the median is 0.
       - Largest function has 19 statements in it, while the median is 4.5.
       - The most complex function has a cyclomatic complexity value of 3 while the median is 1.
+- Lighthouse
 
-
-### Unfixed Bugs
-
+    ![Lighthouse](screenshots/lighthouse.png)
 
 ## Deployment
 
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://niallpierce.github.io/Dragon-Slayer/
 
 
 ## Credits 
