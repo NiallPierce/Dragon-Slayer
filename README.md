@@ -74,10 +74,26 @@ Dragon Fighter is a turn-based battle game between a player and a dragon. The pl
 
 
 
-### Features Left to Implement
+### Future Improvements
 
-- I would like to add an audio file of a sword swing sound when the user hits attack.
-- Additional animation to the victory and defeat message.
+- **Ending Features**: Add audio/effect when victory or defeat appears.
+- **Additional Features**: Include more interactive elements like special attacks, power-ups, and different dragons.
+
+## Design
+
+### User Experience
+
+The user experience is designed to be smooth and engaging, with clear feedback mechanisms:
+
+- **Health Indicators**: Both player and dragon health are prominently displayed and updated after each turn.
+- **Attack Feedback**: The result of each attack is shown in the message area.
+- **Background Music**: Adds to the immersive experience, with options to mute/unmute.
+
+### Design Decisions
+
+- **Font Choice**: 'BlackChancery' and 'Pirata One' were chosen for their match the fantasy setting.
+- **Color Scheme**: A dark background with golden text to provide a high contrast and fantasy-like feel.
+- **Animations**: Subtle animations, like the shake effect on attack messages, enhance the feedback.
 
 
 ## Testing 
